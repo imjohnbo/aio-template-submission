@@ -34,8 +34,6 @@ jobs:
             ### Template Registry Verification
           pinned: false
           close-previous: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   check-registry:
     name: Create issues to remove unavailable templates, and to update templates that have newest versions
     runs-on: ubuntu-latest
